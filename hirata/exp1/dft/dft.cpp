@@ -72,7 +72,7 @@ int main(int argc, char **argv) {
         log_power = 10 * log10(tmp_power);
         powersp.push_back(log_power);
         //std::cout << log_power << std::endl;
-        ofs << log_power << std::endl;
+        ofs << i*44100.0/4096.0 << "\t" <<  log_power << std::endl;
     }
 
     ofs.close();

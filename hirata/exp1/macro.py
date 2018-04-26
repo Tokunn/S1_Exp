@@ -7,6 +7,7 @@ WAVEDIR = "../waves/"
 TIMEMES = "./measuretime.sh"
 TMPIMG = "imgoutput.png"
 IMGDIR = "imgs/"
+PLOT = "./plot.sh"
 
 DFTAPP = "dft/a.out"
 DFTDIR = "dft/"
@@ -36,7 +37,7 @@ def main():
         cmd = DFTAPP + " " + WAVEDIR + wave
         print(cmd)
         subprocess.call(cmd.split())
-        cmd = DFTPLOT
+        cmd = PLOT
         print(cmd)
         subprocess.call(cmd)
         shutil.move(TMPIMG, DFTIMGDIR + "{0}.png".format(wave[:-4]))
@@ -51,7 +52,7 @@ def main():
         cmd = FFTAPP + " " + WAVEDIR + wave
         print(cmd)
         subprocess.call(cmd.split())
-        cmd = FFTPLOT
+        cmd = PLOT
         print(cmd)
         subprocess.call(cmd)
         shutil.move(TMPIMG, FFTIMGDIR + "{0}.png".format(wave[:-4]))
