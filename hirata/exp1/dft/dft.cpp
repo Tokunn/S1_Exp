@@ -25,8 +25,19 @@ void dft(std::vector<double> xr, std::vector<double> xi, double *Xr, double *Xi,
   }
 }
 
-int main(void) {
-    std::ifstream ifs ("./waves/sinewave.txt", std::ifstream::in);
+int main(int argc, char **argv) {
+
+    char *filename;
+    char defaultname[] = "../../waves/sinewave.txt";
+
+    if (argc > 1) {
+        filename = argv[1];
+    }
+    else {
+        filename = defaultname;
+    }
+    std::ifstream ifs (filename, std::ifstream::in);
+
     std::ofstream ofs ("./output.csv");
     std::vector<double> wavedata_r;
     std::vector<double> wavedata_i(N, 0);

@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-const int N = 4096;
+const int N = 2048;
 
 
 void fft(std::vector<double> xr, std::vector<double> xi, double *Xr, double *Xi, int Nn )
