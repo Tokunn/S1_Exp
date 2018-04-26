@@ -67,7 +67,7 @@ int main(int argc, char **argv) {
 
     for (int i = 0; i < N; i++) {
         double tmp_power, log_power;
-        std::cout << Xi[i] << std::endl;
+        //std::cout << Xi[i] << std::endl;
         tmp_power = Xr[i]*Xr[i] + Xi[i]*Xi[i];
         log_power = 10 * log10(tmp_power);
         powersp.push_back(log_power);

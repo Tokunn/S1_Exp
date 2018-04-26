@@ -103,7 +103,7 @@ int main(int argc, char **argv) {
         tmp_power = Xr[i]*Xr[i] + Xi[i]*Xi[i];
         log_power = 10 * log10(tmp_power);
         powersp.push_back(log_power);
-        std::cout << i << "\t" <<  log_power << std::endl;
+        //std::cout << i << "\t" <<  log_power << std::endl;
         ofs << i << "\t" <<  log_power << std::endl;
         //ofs << log_power << std::endl;
     }
