@@ -120,3 +120,8 @@ weight/
 a.out
 *.csv
 *.txt
+
+dft2048
+fft2048
+
+
