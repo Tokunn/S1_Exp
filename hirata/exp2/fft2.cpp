@@ -7,7 +7,7 @@
 #include <vector>
 #include <numeric>
 
-const int SEP = 128;
+const int SEP = 256;
 const int N = 4096;
 
 
